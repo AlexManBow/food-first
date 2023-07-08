@@ -18,7 +18,10 @@ function Recipe() {
 				<Preloader />
 			) : (
 				<div className='recipe'>
-					<img src={recipe.strMealThumb} alt={recipe.strMeal} />
+					<img
+						src={recipe.strMealThumb}
+						alt={recipe.strMeal}
+					/>
 					<h1>{recipe.strMeal}</h1>
 					<h6>Category: {recipe.strCategory}</h6>
 					{recipe.strArea ? <h6>Area: {recipe.strArea}</h6> : null}
@@ -58,7 +61,10 @@ function Recipe() {
 					) : null}
 				</div>
 			)}
-			<button className='btn' onClick={goBack}>
+			<button
+				className='btn'
+				onClick={goBack}
+			>
 				Go back
 			</button>
 		</>
