@@ -14,6 +14,7 @@ const getAllCategories = async () => {
 
 const getFilteredCategory = async (categoryName) => {
 	const response = await fetch(API_URL + 'filter.php?c=' + categoryName)
+	console.log(response)
 	return await response.json()
 }
 
