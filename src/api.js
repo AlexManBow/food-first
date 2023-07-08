@@ -1,5 +1,4 @@
 import { API_URL } from './config'
-import { logDOM } from '@testing-library/react'
 
 const getMealById = async (mealId) => {
 	const response = await fetch(API_URL + 'lookup.php?i=' + mealId)
